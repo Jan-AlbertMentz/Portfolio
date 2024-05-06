@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/Main Project/Styles/Contact.css"> <!-- External CSS for styling -->
+</head>
+<body>
+    <div id="contact-page">
+        <!-- Contact Header -->
+        <h1>Contact Information</h1>
+        <p>Feel free to reach out to me via email or phone. Click the button below to send me an email.</p>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <!-- Name -->
+            <div class="info-group">
+                <strong>Name:</strong> Jan-Albert Mentz
+            </div>
+            
+            <!-- Email -->
+            <div class="info-group">
+                <strong>Email:</strong> <a href="mailto:janmen777@gmail.com">janmen777@gmail.com</a> <!-- Clickable email -->
+            </div>
+            
+            <!-- Contact Number -->
+            <div class="info-group">
+                <strong>Contact Number:</strong> +27 123 456 789
+            </div>
+        </div>
+
+        <!-- Button to send email -->
+        <button class="email-button" onclick="sendEmail()">Send Email</button> <!-- Triggers the email client -->
+    </div>
+
+    <!-- JavaScript to handle email button click -->
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:janmen777@gmail.com"; /* Opens email client with the email address */
+        }
+    </script>
+</body>
