@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/Main Project/Styles/Projects.css" />
+    <!-- External CSS -->
+  </head>
+  <body>
+    <div id="portfolio-page">
+      <!-- Portfolio Header -->
+      <h1>My Portfolio</h1>
+      <p>
+        Here are some of my recent projects. Click on a project to learn more.
+      </p>
+
+      <!-- Project Grid with Two at the Top and One at the Bottom -->
+      <div class="project-grid">
+        <!-- Top Row with Two Projects -->
+        <div class="project" onclick="openProject1()">
+          <img
+            src="/Main Project/Pictures/Bugtracker.png"
+            alt="Project 1"
+            class="project-image"
+          />
+          <h2>Project 1</h2>
+          <p>Brief description of Project 1.</p>
+        </div>
+
+        <div class="project" onclick="openProject2()">
+          <img
+            src="/Main Project/Pictures/F-J&Mone.png"
+            alt="Project 2"
+            class="project-image"
+          />
+          <h2>Project 2</h2>
+          <p>Brief description of Project 2.</p>
+        </div>
+
+        <!-- Bottom Row with One Project -->
+        <div class="project" onclick="openProject3()">
+          <img
+            src="/Main Project/Pictures/image.png"
+            alt="Project 3"
+            class="project-image"
+          />
+          <h2>Project 3</h2>
+          <p>Brief description of Project 3.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript functions to open projects -->
+    <script>
+      function openProject1() {
+        window.open("https://jan-albertmentz.github.io/BugTracker/"); // Path to Project 1
+      }
+
+      function openProject2() {
+        window.open("https://jan-albertmentz.github.io/F-J-en-Mone-Wedding/"); // Path to Project 2
+      }
+
+      function openProject3() {
+        window.open("./Projects/Project3.html"); // Path to Project 3
+      }
+    </script>
+  </body>
+</html>
