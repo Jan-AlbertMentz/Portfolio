@@ -1,0 +1,68 @@
+/* General styling for the portfolio page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2C2A3B; /* Darker background color */
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Portfolio page container */
+#portfolio-page {
+  text-align: center; /* Center the text */
+  padding: 5%; /* Padding around the content */
+}
+
+/* Project grid with two at the top and one at the bottom */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for the top row */
+  grid-template-rows: auto auto; /* Two rows */
+  justify-items: center; /* Center the projects */
+  align-items: start; /* Align to the top */
+  gap: 5%; /* Space between projects */
+}
+
+/* The bottom project spans both columns */
+.project-grid > .project:last-child {
+  grid-column: 1 / span 2; /* Span both columns */
+}
+
+/* Styling for individual projects */
+.project {
+  background-color: #D1EFE9; /* Light color for project box */
+  border: 1% solid #7A6250; /* Matching border color */
+  border-radius: 10%; /* Rounded corners (relative) */
+  text-align: center;
+  padding: 5%; /* Padding inside the project box */
+  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  transition: all 0.3s; /* Smooth transitions */
+}
+
+/* Project image styling */
+.project-image {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10%; /* Rounded corners to match project */
+}
+
+/* Hover effects for projects */
+.project:hover {
+  transform: scale(1.05); /* Slight scale effect */
+  border-color: #7A6250; /* Change border color on hover */
+}
+
+/* Project title styling */
+.project h2 {
+  font-size: 150%; /* Larger font for titles, relative */
+  color: #2C2A3B; /* Darker color for contrast */
+}
+
+/* Project description styling */
+.project p {
+  font-size: 100%; /* Regular font size, relative */
+  color: #807166; /* Soft muted tone for descriptions */
+}
+
+  
+  
