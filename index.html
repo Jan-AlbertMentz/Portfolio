@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website with Navigation Bar</title>
+    <link rel="stylesheet" href="./Styles/FrontPage.css">
+</head>
+<script>
+  function openPDF() {
+    // Open the PDF in a new tab
+    window.open('./Resume/Jan-Albert Mentz CV.pdf');
+  }
+  function openPortfolio() {
+    // Open the PDF in a new tab
+    window.open('./Projects/index.html');
+  }
+  function openContact() {
+    // Open the PDF in a new tab
+    window.open('./Contact/index.html');
+  }
+  </script>
+<body>
+    <div id="body-div" class="positioning-grid">
+      <!-- Navigation Bar -->
+      <nav id="nav-bar">
+        <div id="left-nav-bar">
+          <img src="./Pictures/profile.jpg" alt="Profile Picture" id="left-nav-pic" />
+          <span class="nav-name">Jan-Albert Mentz</span> <!-- Added name next to the image -->
+        </div>
+        <div id="right-nav-bar">
+          <a href="./Resume/index.html">Resume |</a>
+          <a href="./Projects/index.html">Projects |</a>
+          <a href="./Contact/index.html">Contact |</a>
+        </div>
+      </nav>
+      
+      <!-- Content Section -->
+      <div id="content-div">
+        <div id="image-div">
+          <img src="./Pictures/profile.jpg" alt="Profile Picture" id="cv-image" />
+        </div>
+        
+        <div id="main-text-div">
+          <div id="title-div">
+            <h1>Hello</h1>
+          </div>
+          <div id="text-div-content">
+            <h2>A Bit About Me</h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+            </p>
+          </div>
+          <div class="button-container">
+            <!-- Buttons with hover effects -->
+            <button class="btn btn-1" onclick="openPDF()">Resume</button>
+            <button class="btn btn-2" onclick="openPortfolio()">Portfolio</button>
+            <button class="btn btn-3" onclick="openContact()">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+

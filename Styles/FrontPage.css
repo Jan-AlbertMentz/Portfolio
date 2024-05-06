@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2C2A3B;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar Styles */
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #6BB4AA;
+  align-items: center;
+}
+
+/* Left section of the nav bar */
+#left-nav-bar {
+  display: flex;
+  align-items: center; /* Align vertically */
+  gap: 1em; /* Space between the image and text */
+}
+
+#left-nav-pic {
+  width: 50px; /* Fixed size */
+  height: auto;
+  border-radius: 50%; /* Circular shape */
+}
+
+/* Style for the name next to the profile picture */
+.nav-name {
+  color: white; /* Matching nav bar text color */
+  font-size: 1.2em; /* Slightly larger font size for emphasis */
+  font-weight: bold; /* Bold text to make it stand out */
+}
+
+/* Right section of the nav bar */
+#right-nav-bar {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  gap: 5%; /* Space between links */
+  width: 70%; /* Set the width for the right nav bar */
+}
+
+  
+  #content-div {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4E2DF ;
+    height: 80%;
+    width: 100%;
+  }
+  
+  #image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+  
+  #cv-image {
+    width: 80%; /* Keeping the image responsive */
+    height: auto;
+    border-radius: 50%; 
+  }
+  
+  #main-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text and buttons at the top */
+    width: 35%;
+  }
+  
+  #title-div, #text-div-content {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 5%; /* Space between buttons */
+    width: 100%; /* Keep within text boundary */
+    padding-top: 5%; /* Adds space between text and buttons */
+  }
+  
+  /* Circular button base styles with background colors */
+  .btn {
+    width: 6em; /* Relative size to ensure text fits */
+    height: 6em;
+    border-radius: 50%; /* Circular shape */
+    border: none;
+    cursor: pointer;
+    background-color: #cccccc; /* Default background color */
+    color: white; /* Default text color */
+    transition: all 0.5s; /* Smooth transitions */
+    text-align: center; /* Align text horizontally */
+    line-height: 6em; /* Align text vertically */
+  }
+  
+  /* Hover effects for each button */
+  .btn-1 {
+    background-color: #7A6250; /* Base color */
+  }
+  
+  .btn-1:hover {
+    background-color: #5F4E45; /* Hover color */
+    transform: scale(1.2);
+  }
+  
+  .btn-2 {
+    background-color: #CAB8A4; /* Base color */
+  }
+  
+  .btn-2:hover {
+    background-color: #B9A28C; /* Hover color */
+    transform: scale(1.2);
+  }
+  
+  .btn-3 {
+    background-color: #C87856; /* Base color */
+  }
+  
+  .btn-3:hover {
+    background-color: #9D6042; /* Hover color */
+    transform: scale(1.2); /* Scaling on hover */
+  }
+  
+  
+  /* Base styling for all anchor elements */
+a {
+  text-decoration: none; /* Remove underlines for a clean look */
+  color: inherit; /* Inherit color from the surrounding text */
+  font-family: inherit; /* Match the font family used in the site */
+  font-weight: inherit; /* Ensure consistent text weight */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effects for links */
+a:hover {
+  text-decoration: underline; /* Underline on hover to indicate interactivity */
+  color: #C87856; /* Change color to indicate hover */
+}
+
+/* Active link styling */
+a:active {
+  color: #5F4E45; /* Different color when active/clicked */
+  text-decoration: underline; /* Retain underline when active */
+}
