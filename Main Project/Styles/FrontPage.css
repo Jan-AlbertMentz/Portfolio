@@ -196,7 +196,7 @@ body {
 
   #main-text-div {
     width: 100%;
-    text-align: center; 
+    text-align: right;   
   }
 
   .button-container {
@@ -229,7 +229,7 @@ body {
   }
 
   .footer-rotate{
-    transform: rotate(-90deg)
+    transform: rotate(90deg)
   }
 
   #right-nav-bar.active {
