@@ -1,59 +1,91 @@
 /* General styling for the contact page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2C2A3B; /* Dark background */
-    color: white; /* White text for contrast */
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Center the text */
-  }
-  
-  /* Contact page container */
-  #contact-page {
-    padding: 2%; /* Padding around the content */
-  }
-  
-  /* Contact information section */
-  .contact-info {
-    text-align: left; /* Align contact information to the left */
-    padding: 2%; /* Padding within the section */
-    background-color: #B0AEA9; /* Light background */
-    border: 1px solid #807166; /* Matching border color */
-    border-radius: 2%; /* Rounded corners relative to the container size */
-    margin: 0 auto; /* Center the contact information */
-    width: 50%; /* Set a percentage width for the contact info */
-  }
-  
-  /* Individual contact info group */
-  .info-group {
-    margin-bottom: 5%; /* Space between information sections */
-  }
-  
-  /* Email link styling */
-  .contact-info a {
-    color: #C87856; /* Color for the email link */
-    text-decoration: none; /* No underline */
-  }
-  
-  /* Hover effect for email link */
-  .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
-  /* Button styling */
-  .email-button {
-    background-color: #C87856; /* Base color for the button */
-    color: white; /* White text for contrast */
-    border: none;
-    border-radius: 5%; /* Slight rounding of corners relative to the button size */
-    padding: 1% 3%; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor */
-    transition: all 0.3s; /* Smooth transitions */
-  }
-  
-  /* Hover effect for button */
-  .email-button:hover {
-    background-color: #9D6042; /* Darker color on hover */
-    transform: scale(1.1); /* Slight scale on hover */
-  }
-   
+  font-family: Arial, sans-serif;
+  background-color: #2C2A3B; /* Dark background */
+  color: white; /* White text for contrast */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center the text */
+}
+
+/* Contact page container */
+#contact-page {
+  padding: 2%; /* Padding around the content */
+}
+
+/* Contact information section */
+.contact-info {
+  text-align: left; /* Align contact information to the left */
+  padding: 2%; 
+  background-color: #B0AEA9; 
+  border: 1px solid #807166; 
+  border-radius: 2%; 
+  margin: 0 auto; 
+  width: 50%; 
+}
+
+/* Individual contact info group */
+.info-group {
+  margin-bottom: 5%; /* Space between information sections */
+}
+
+/* Email link styling */
+.contact-info a {
+  color: #C87856; 
+  text-decoration: none; 
+}
+
+/* Hover effect for email link */
+.contact-info a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Button container to create spacing */
+.button-container {
+  margin-top: 5%; /* Add a gap between the contact info and the button */
+  text-align: center; /* Center the button */
+}
+
+/* Email button styling with hover effects */
+.email-button {
+  background-color: #C87856; 
+  color: white; 
+  border: none;
+  border-radius: 5%; 
+  padding: 1% 3%; 
+  cursor: pointer; 
+  transition: all 0.3s; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Hover effect for the email button */
+.email-button:hover {
+  background-color: #9D6042; /* Darker color on hover */
+  transform: scale(1.1); /* Slight scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { 
+#contact-page {
+  padding: 3%; 
+}
+
+.contact-info {
+  width: 90%; 
+  text-align: center; 
+}
+
+.info-group {
+  margin-bottom: 3%; 
+}
+
+.button-container {
+  margin-top: 3%; 
+  text-align: center; 
+}
+
+.email-button {
+  padding: 2% 5%; 
+}
+}

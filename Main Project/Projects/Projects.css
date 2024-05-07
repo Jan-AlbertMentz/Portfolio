@@ -1,8 +1,8 @@
 /* General styling for the portfolio page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #2C2A3B; /* Darker background color */
-  color: white;
+  background-color: #2C2A3B; /* Dark background color */
+  color: white; /* White text */
   margin: 0;
   padding: 0;
 }
@@ -16,34 +16,34 @@ body {
 /* Project grid with two at the top and one at the bottom */
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns for the top row */
-  grid-template-rows: auto auto; /* Two rows */
+  grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  grid-template-rows: auto auto; 
   justify-items: center; /* Center the projects */
-  align-items: start; /* Align to the top */
+  align-items: start; 
   gap: 5%; /* Space between projects */
 }
 
 /* The bottom project spans both columns */
 .project-grid > .project:last-child {
-  grid-column: 1 / span 2; /* Span both columns */
+  grid-column: 1 / span 2; /* Span both columns for larger screens */
 }
 
 /* Styling for individual projects */
 .project {
-  background-color: #D1EFE9; /* Light color for project box */
-  border: 1% solid #7A6250; /* Matching border color */
-  border-radius: 10%; /* Rounded corners (relative) */
+  background-color: #D1EFE9; /* Light background */
+  border: 1px solid #7A6250; /* Border color */
+  border-radius: 10px; /* Rounded corners */
   text-align: center;
-  padding: 5%; /* Padding inside the project box */
-  cursor: pointer; /* Pointer cursor to indicate interactivity */
+  padding: 5%; 
+  cursor: pointer; 
   transition: all 0.3s; /* Smooth transitions */
 }
 
 /* Project image styling */
 .project-image {
-  width: 100%; /* Full width for images */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10%; /* Rounded corners to match project */
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
 }
 
 /* Hover effects for projects */
@@ -54,15 +54,33 @@ body {
 
 /* Project title styling */
 .project h2 {
-  font-size: 150%; /* Larger font for titles, relative */
-  color: #2C2A3B; /* Darker color for contrast */
+  font-size: 1.5em; /* Larger font for titles */
+  color: #2C2A3B; /* Darker text */
 }
 
 /* Project description styling */
 .project p {
-  font-size: 100%; /* Regular font size, relative */
-  color: #807166; /* Soft muted tone for descriptions */
+  font-size: 1em; 
+  color: #807166; 
 }
 
-  
-  
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { 
+  #portfolio-page {
+    padding: 3%; /* Adjusted padding */
+  }
+
+  /* Project grid changes for smaller screens */
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-rows: auto; /* Adjust for single-column layout */
+  }
+
+  .project-grid > .project:last-child {
+    grid-column: 1 / span 1; /* Single-column layout */
+  }
+
+  .project {
+    padding: 3%; /* Adjusted padding for smaller screens */
+  }
+}

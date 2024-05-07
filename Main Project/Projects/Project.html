@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="Projects.css"/>
+    <link rel="stylesheet" href="Projects.css" />
     <!-- External CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design -->
   </head>
   <body>
     <div id="portfolio-page">
@@ -14,38 +16,33 @@
         Here are some of my recent projects. Click on a project to learn more.
       </p>
 
-      <!-- Project Grid with Two at the Top and One at the Bottom -->
+      <!-- Project Grid -->
       <div class="project-grid">
-        <!-- Top Row with Two Projects -->
+        <!-- Project 1 -->
         <div class="project" onclick="openProject1()">
-          <img
-            src="Bugtracker.png"
-            alt="Project 1"
-            class="project-image"
-          />
+          <img src="Bugtracker.png" alt="Project 1" class="project-image" />
           <h2>Bugtracker</h2>
-          <p>This is a ticket raiser and tracker, you can create new tickets and keep track of old tickets.</p>
+          <p>
+            This is a ticket raiser and tracker, where you can create new
+            tickets and keep track of old tickets.
+          </p>
         </div>
 
+        <!-- Project 2 -->
         <div class="project" onclick="openProject2()">
-          <img
-            src="F-J&Mone.png"
-            alt="Project 2"
-            class="project-image"
-          />
+          <img src="F-J&Mone.png" alt="Project 2" class="project-image" />
           <h2>Wedding Website</h2>
-          <p>This is a wedding website I created, with a RSVP done on Glide</p>
+          <p>This is a wedding website with an RSVP form created on Glide.</p>
         </div>
 
-        <!-- Bottom Row with One Project -->
+        <!-- Project 3 -->
         <div class="project" onclick="openProject3()">
-          <img
-            src="CProject.png"
-            alt="Project 3"
-            class="project-image"
-          />
+          <img src="CProject.png" alt="Project 3" class="project-image" />
           <h2>Students and Modules</h2>
-          <p>This is a university project we completed, adding students with their current module.</p>
+          <p>
+            This is a university project where you can add students and their
+            current modules.
+          </p>
         </div>
       </div>
     </div>
