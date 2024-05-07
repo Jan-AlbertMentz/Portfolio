@@ -3,76 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <title>Jan-Albert Mentz Portfolio Website</title>
-    <link rel="stylesheet" href="Main Project/Styles/FrontPage.css"/>
+    <link rel="stylesheet" href="Main Project/Styles/FrontPage.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design -->
   </head>
   <body>
-    <div id="body-div" class="positioning-grid">
-      <!-- Navigation Bar -->
-      <nav id="nav-bar">
-        <div id="left-nav-bar">
-          <img
-            src="Main Project/Pictures/profile.jpg"
-            alt="Profile Picture"
-            id="left-nav-pic"
-          />
-          <span class="nav-name">Jan-Albert Mentz</span>
-          <!-- Added name next to the image -->
-        </div>
-        <div id="right-nav-bar">
-          <a href="Main Project/Resume/Jan-Albert Mentz CV.pdf">Resume |</a>
-          <a href="Main Project/Projects/Project.html">Projects |</a>
-          <a href="Main Project/Contact/Contact.html">Contact |</a>
-        </div>
-      </nav>
+    <nav id="nav-bar" class="navbar">
+      <div id="left-nav-bar" class="navbar-left">
+        <img
+          src="Main Project/Pictures/profile.jpg"
+          alt="Profile Picture"
+          id="left-nav-pic"
+        />
+        <span class="nav-name">Jan-Albert Mentz</span>
+      </div>
 
-      <!-- Content Section -->
-      <div id="content-div">
-        <div id="image-div">
-          <img
-            src="Main Project/Pictures/profile.jpg"
-            alt="Profile Picture"
-            id="cv-image"
-          />
-        </div>
+      <!-- "Hamburger" Menu for Smaller Screens (Always on the Right) -->
+      <div class="navbar-toggle">
+        <button id="menu-button">☰</button>
+        <!-- Always on the right -->
+      </div>
 
-        <div id="main-text-div">
-          <div id="title-div">
-            <h1>Hello</h1>
-          </div>
-          <div id="text-div-content">
-            <h2>A Bit About Me</h2>
-            <p>
-              I am Jan-Albert Mentz, a hardworking and dedicated individual in 
-              my third year at Belgium Campus. I take pride in my ability to 
-              learn quickly and adapt to new challenges. My eagerness to work 
-              and my commitment to excellence drive me to push my limits and 
-              acquire new skills. I look forward to applying my knowledge and 
-              energy in a professional setting, where I can contribute meaningfully and continue to grow.
-            </p>
-          </div>
-          <div class="button-container">
-            <!-- Buttons with hover effects -->
-            <button
-              class="btn btn-1"
-              onclick="window.location.href = 'Main Project/Resume/Jan-Albert Mentz CV.pdf';"
-            >
-              Resume
-            </button>
-            <button
-              class="btn btn-2"
-              onclick="window.location.href = 'Main Project/Projects/Project.html';"
-            >
-              Portfolio
-            </button>
-            <button
-              class="btn btn-3"
-              onclick="window.location.href = 'Main Project/Contact/Contact.html';"
-            >
-              Contact
-            </button>
-          </div>
+      <div id="right-nav-bar" class="navbar-links">
+        <a href="Main Project/Resume/Jan-Albert Mentz CV.pdf">Resume</a>
+        <a href="Main Project/Projects/Project.html">Projects</a>
+        <a href="Main Project/Contact/Contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div id="content-div">
+      <div id="image-div">
+        <img
+          src="Main Project/Pictures/profile.jpg"
+          alt="Profile Picture"
+          id="cv-image"
+        />
+      </div>
+
+      <div id="main-text-div">
+        <div id="title-div">
+          <h1>Hello</h1>
+        </div>
+        <div id="text-div-content">
+          <h2>A Bit About Me</h2>
+          <p>
+            I am Jan-Albert Mentz, a hardworking and dedicated individual in my
+            third year at Belgium Campus. I take pride in my ability to learn
+            quickly and adapt to new challenges. My eagerness to work and my
+            commitment to excellence drive me to push my limits and acquire new
+            skills. I look forward to applying my knowledge and energy in a
+            professional setting, where I can contribute meaningfully and
+            continue to grow.
+          </p>
+        </div>
+        <div class="button-container">
+          <!-- Buttons with hover effects -->
+          <button
+            class="btn btn-1"
+            onclick="window.location.href = 'Main Project/Resume/Jan-Albert Mentz CV.pdf';"
+          >
+            Resume
+          </button>
+          <button
+            class="btn btn-2"
+            onclick="window.location.href = 'Main Project/Projects/Project.html';"
+          >
+            Portfolio
+          </button>
+          <button
+            class="btn btn-3"
+            onclick="window.location.href = 'Main Project/Contact/Contact.html';"
+          >
+            Contact
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- Footer Section -->
+    <div id="footer" class="footer">
+      <div class="footer-content">
+        <span>Jan-Albert Mentz</span>
+        <span>|</span>
+        <span>+27 123 456 789</span>
+        <span>|</span>
+        <span>janmen777@gmail.com</span>
+      </div>
+    </div>
+
+    <!-- JavaScript to handle the navbar toggle -->
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const navbarLinks = document.getElementById("right-nav-bar"); // Ensure correct ID reference
+
+      menuButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active"); // Toggle 'active' class
+      });
+    </script>
   </body>
 </html>
