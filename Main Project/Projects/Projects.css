@@ -1,26 +1,30 @@
 /* General styling for the portfolio page */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #2C2A3B; /* Dark background */
-  color: white; 
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #2C2A3B, #3E3B4F); /* Gradient background for depth */
+  color: white; /* White text for contrast */
   margin: 0;
   padding: 0;
 }
 
 /* Portfolio page container */
 #portfolio-page {
-  text-align: center; 
-  padding: 5%; 
+  text-align: center;
+  padding: 4%; /* Adjusted padding for balanced spacing */
+  max-width: 1200px; /* Limit the max width for readability */
+  margin: 0 auto; /* Center content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 /* Home icon at top left */
 .home-icon {
   position: absolute; /* Position at top left */
-  top: 1%; 
-  left: 1%; 
+  top: 1.5%; 
+  left: 1.5%; 
   font-size: 1.5em; /* Larger icon size */
   cursor: pointer; 
-  transition: all 0.3s; 
+  transition: all 0.3s; /* Smooth transitions */
   color: white; /* White icon for contrast */
 }
 
@@ -30,81 +34,68 @@ body {
   color: #CAB8A4; /* Change color on hover */
 }
 
-/* Project grid with two at the top and one at the bottom */
+/* Project grid with responsive adjustments */
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: auto; 
-  justify-items: center; 
-  align-items: start; 
-  gap: 5%; 
-}
-
-/* The bottom project spans both columns */
-.project-grid > .project:last-child {
-  grid-column: 1 / span 2; 
+  grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  grid-template-rows: auto;
+  gap: 2em; /* Spacing between projects */
+  padding-top: 2%; /* Space at the top */
 }
 
 /* Styling for individual projects */
 .project {
-  background-color: #D1EFE9; 
+  background-color: rgba(255, 255, 255, 0.2); /* Translucent background */
   border: 1px solid #7A6250; 
   border-radius: 10px; 
-  text-align: center;
-  padding: 5%; 
+  text-align: center; 
+  padding: 3%; 
   cursor: pointer; 
-  transition: all 0.3s; 
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
 /* Project image styling */
 .project-image {
-  width: 100%; 
-  height: auto; 
+  width: 100%; /* Ensure images take full width */
   border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to images */
 }
 
 /* Hover effects for projects */
 .project:hover {
-  transform: scale(1.05); 
-  border-color: #7A6250; 
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
 
 /* Project title styling */
 .project h2 {
   font-size: 1.5em; 
-  color: #2C2A3B; 
+  color: white; /* Use white for consistency */
+  margin-top: 0.5em; /* Add margin for spacing */
 }
 
 /* Project description styling */
 .project p {
   font-size: 1em; 
-  color: #807166; 
+  color: white; /* Consistent with title color */
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) { 
   #portfolio-page {
-    padding: 3%; 
+    padding: 3%; /* Adjusted padding for smaller screens */
   }
 
   /* Project grid changes for smaller screens */
   .project-grid {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto; 
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 1em; /* Reduced gap for smaller screens */
   }
 
-  .project-grid > .project:last-child {
-    grid-column: 1 / span 1; 
-  }
-
-  .project {
-    padding: 3%; 
-  }
-
-  /* Home icon responsive adjustment */
   .home-icon {
-    top: 2%; 
-    left: 2%; 
+    top: 2.5%; /* Adjusted position for smaller screens */
+    left: 2.5%; 
   }
 }
+
 
