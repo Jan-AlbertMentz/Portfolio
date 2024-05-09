@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="Contact.css" />
-    <!-- External CSS for styling -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Responsive design -->
-  </head>
-  <body>
+    <link rel="stylesheet" href="Contact.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <!-- Home Button with Home Icon -->
+    <div class="home-button" onclick="goHome()">
+        <i class="fas fa-home"></i> <!-- Home icon -->
+    </div>
+
     <div id="contact-page">
       <!-- Contact Header -->
       <h1>Contact Information</h1>
@@ -25,8 +29,7 @@
         <!-- Email -->
         <div class="info-group">
           <strong>Email:</strong>
-          <a href="mailto:janmen777@gmail.com">janmen777@gmail.com</a>
-          <!-- Clickable email -->
+          <a href="mailto:janmen777@gmail.com">janmen777@gmail.com</a> <!-- Clickable email -->
         </div>
 
         <!-- Contact Number -->
@@ -42,12 +45,15 @@
       </div>
     </div>
 
-    <!-- JavaScript to handle email button click -->
+    <!-- JavaScript functions to handle button clicks -->
     <script>
       function sendEmail() {
-        window.location.href =
-          "mailto:janmen777@gmail.com"; /* Opens email client */
+        window.location.href = "mailto:janmen777@gmail.com"; /* Opens email client */
+      }
+
+      function goHome() {
+        window.location.href = "../../index.html"; /* Path back to home page */
       }
     </script>
-  </body>
-</html>
+</body>
+

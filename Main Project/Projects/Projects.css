@@ -1,42 +1,59 @@
 /* General styling for the portfolio page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #2C2A3B; /* Dark background color */
-  color: white; /* White text */
+  background-color: #2C2A3B; /* Dark background */
+  color: white; 
   margin: 0;
   padding: 0;
 }
 
 /* Portfolio page container */
 #portfolio-page {
-  text-align: center; /* Center the text */
-  padding: 5%; /* Padding around the content */
+  text-align: center; 
+  padding: 5%; 
+}
+
+/* Home icon at top left */
+.home-icon {
+  position: absolute; /* Position at top left */
+  top: 1%; 
+  left: 1%; 
+  font-size: 1.5em; /* Larger icon size */
+  cursor: pointer; 
+  transition: all 0.3s; 
+  color: white; /* White icon for contrast */
+}
+
+/* Hover effect for home icon */
+.home-icon:hover {
+  transform: scale(1.1); /* Slight scale on hover */
+  color: #CAB8A4; /* Change color on hover */
 }
 
 /* Project grid with two at the top and one at the bottom */
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
-  grid-template-rows: auto auto; 
-  justify-items: center; /* Center the projects */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
+  justify-items: center; 
   align-items: start; 
-  gap: 5%; /* Space between projects */
+  gap: 5%; 
 }
 
 /* The bottom project spans both columns */
 .project-grid > .project:last-child {
-  grid-column: 1 / span 2; /* Span both columns for larger screens */
+  grid-column: 1 / span 2; 
 }
 
 /* Styling for individual projects */
 .project {
-  background-color: #D1EFE9; /* Light background */
-  border: 1px solid #7A6250; /* Border color */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #D1EFE9; 
+  border: 1px solid #7A6250; 
+  border-radius: 10px; 
   text-align: center;
   padding: 5%; 
   cursor: pointer; 
-  transition: all 0.3s; /* Smooth transitions */
+  transition: all 0.3s; 
 }
 
 /* Project image styling */
@@ -48,14 +65,14 @@ body {
 
 /* Hover effects for projects */
 .project:hover {
-  transform: scale(1.05); /* Slight scale effect */
-  border-color: #7A6250; /* Change border color on hover */
+  transform: scale(1.05); 
+  border-color: #7A6250; 
 }
 
 /* Project title styling */
 .project h2 {
-  font-size: 1.5em; /* Larger font for titles */
-  color: #2C2A3B; /* Darker text */
+  font-size: 1.5em; 
+  color: #2C2A3B; 
 }
 
 /* Project description styling */
@@ -67,20 +84,27 @@ body {
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) { 
   #portfolio-page {
-    padding: 3%; /* Adjusted padding */
+    padding: 3%; 
   }
 
   /* Project grid changes for smaller screens */
   .project-grid {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
-    grid-template-rows: auto; /* Adjust for single-column layout */
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
   }
 
   .project-grid > .project:last-child {
-    grid-column: 1 / span 1; /* Single-column layout */
+    grid-column: 1 / span 1; 
   }
 
   .project {
-    padding: 3%; /* Adjusted padding for smaller screens */
+    padding: 3%; 
+  }
+
+  /* Home icon responsive adjustment */
+  .home-icon {
+    top: 2%; 
+    left: 2%; 
   }
 }
+
