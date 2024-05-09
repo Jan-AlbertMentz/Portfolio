@@ -195,6 +195,10 @@ body {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) { 
+  body{
+    overflow-y: scroll;
+  }
+
   #content-div {
     flex-direction: column; 
     justify-content: flex-start; 
@@ -228,7 +232,9 @@ body {
 
   #nav-bar {
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-direction: row;
   }
+
 
   .navbar-toggle {
     display: flex; /* Show hamburger menu on smaller screens */
@@ -240,6 +246,16 @@ body {
     flex-direction: column; 
     align-items: flex-start; 
     padding: 1em; 
+    width: 50%;
+  }
+
+  .btn{
+    width: 6em;
+    height: 6em;
+  }
+
+  #left-nav-bar { 
+    width: 50%;
   }
 
   .footer-rotate{
