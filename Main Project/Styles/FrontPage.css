@@ -8,6 +8,11 @@ body {
   overflow-y: hidden;
 }
 
+a{
+  text-decoration: underline;
+  color: white;
+}
+
 /* Navigation bar styles */
 .navbar {
   display: flex;
@@ -231,8 +236,8 @@ body {
   }
 
   #nav-bar {
+    display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    flex-direction: row;
   }
 
 
@@ -243,8 +248,8 @@ body {
 
   #right-nav-bar {
     display: none; /* Hide links by default */
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: row; 
+    align-items: flex-end; 
     padding: 1em; 
     width: 50%;
   }
@@ -264,5 +269,7 @@ body {
 
   #right-nav-bar.active {
     display: flex; /* Show links when active */
+    justify-content: right;
+    flex-direction: row;
   }
 }
