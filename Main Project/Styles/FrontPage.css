@@ -272,5 +272,6 @@ a{
     display: flex; /* Show links when active */
     justify-content: right;
     flex-direction: row;
+    width: 100%;
   }
 }
