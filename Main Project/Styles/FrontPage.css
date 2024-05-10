@@ -89,7 +89,7 @@ a{
 }
 
 .navbar-links a:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: rotateY(360deg); /* Flip on hover */
   color: #944B55; /* Change text color */
   background-color: #6BB4AA; /* Background change */
