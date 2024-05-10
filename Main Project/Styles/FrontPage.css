@@ -238,7 +238,7 @@ a{
 
   #nav-bar {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */    
   }
 
 
@@ -252,7 +252,7 @@ a{
     flex-direction: row; 
     align-items: flex-end; 
     padding: 1em; 
-    width: 50%;
+    width: 100%;
   }
 
   .btn{
